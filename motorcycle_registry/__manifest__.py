@@ -12,6 +12,9 @@
     """,
     'depends': ['base'],
     'data': [],
+    'demo':[
+        'demo/motorcycle_registry_demo.xml',
+    ],
     'application': True,
     'license':"LGPL-3"
 }

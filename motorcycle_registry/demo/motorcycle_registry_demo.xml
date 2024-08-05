@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="motorcycle_registry_demo_1" model="motorcycle.registry">
+            <field name="registry_number">REG123456</field>
+            <field name="current_mileage">250</field>
+            <field name="first_name">John</field>
+            <field name="last_name">Doe</field>
+            <field name="vin">1HGCM82633A123456</field>
+        </record>
+        <record id="motorcycle_registry_demo_2" model="motorcycle.registry">
+            <field name="registry_number">REG654321</field>
+            <field name="current_mileage">5250</field>
+            <field name="date_registry">2023-01-01</field>
+            <field name="first_name">Jane</field>
+            <field name="last_name">Doe</field>
+            <field name="vin">5JDH6735HJ75349G1</field>
+        </record>
+        <record id="motorcycle_registry_demo_3" model="motorcycle.registry">
+            <field name="registry_number">REG971139</field>
+            <field name="current_mileage">23250</field>
+            <field name="date_registry">2024-07-04</field>
+            <field name="first_name">Bob</field>
+            <field name="last_name">Smith</field>
+            <field name="vin">F7348FH953H6WE593</field>
+        </record>
+    </data>
+</odoo>
