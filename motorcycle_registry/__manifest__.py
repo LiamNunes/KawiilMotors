@@ -11,7 +11,11 @@
         of each motorcyle of the brand
     """,
     'depends': ['base'],
-    'data': [],
+    'data': [
+        'security/registry_groups.xml',
+        'security/ir.model.access.csv',
+        'security/registry_security.xml'
+    ],
     'demo':[
         'demo/motorcycle_registry_demo.xml',
     ],

@@ -4,6 +4,7 @@ class MotorcycleRegistry(models.Model):
     _name = 'motorcycle.registry'
     _description = 'Motorcycle Registry'
     _record_name = "registry_number"
+    
 
     registry_number = fields.Char(string='Registry Number', required=True)
     certificate_title = fields.Binary(string='Certificate Title')
@@ -13,3 +14,4 @@ class MotorcycleRegistry(models.Model):
     last_name = fields.Char(string='Last Name', required=True)
     license_plate = fields.Char(string='License Plate')
     vin = fields.Char(string='VIN', required=True)
+    active = fields.Boolean(string='Active', default=True)
