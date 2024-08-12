@@ -16,11 +16,19 @@ class MotorcycleRegistry(models.Model):
     certificate_title = fields.Binary(string='Certificate Title')
     current_mileage = fields.Float(string='Current Mileage')
     date_registry = fields.Date(string='Date of Registry')
-    first_name = fields.Char(string='First Name', required=True)
-    last_name = fields.Char(string='Last Name', required=True)
+    #first_name = fields.Char(string='First Name', required=True)
+    #last_name = fields.Char(string='Last Name', required=True)
     license_plate = fields.Char(string='License Plate', required=True)
     vin = fields.Char(string='VIN', required=True)
     active = fields.Boolean(string='Active', default=True)
+
+    owner_id = fields.Many2one(comodel_name="res.partner", string='Owner', ondelete='restrict')
+    phone = fields.Char(string='Phone', related='owner_id.phone', store=True)
+    email = fields.Char(string='Email', related='owner_id.email', store=True)
+
+    make = fields.Char(string='Make', compute='_compute_mmy', store=True)
+    model = fields.Char(string='Model', compute='_compute_mmy', store=True)
+    year = fields.Char(string='Year', compute='_compute_mmy', store=True)
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -42,3 +50,12 @@ class MotorcycleRegistry(models.Model):
         for record in self:
             if not re.match(license_plate_pattern, record.license_plate):
                 raise ValidationError("invalid license")
+    
+    @api.depends('vin')
+    def _compute_mmy(self):
+        for record in self:
+            record.make = record.vin[:2]
+            record.model = record.vin[2:4]
+            record.year = record.vin[4:6]
+            
+    

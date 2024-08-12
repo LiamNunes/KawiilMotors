@@ -13,13 +13,17 @@
                            <separator string="Motorcycle Information"/>
                            <field name="date_registry"/>
                            <field name="vin"/>
+                           <field name="make"/>
+                           <field name="model"/>
+                           <field name="year"/>
                            <field name="current_mileage"/>
                            <field name="license_plate"/>
                        </group>
                        <group>
                            <separator string="Driver Information"/>
-                           <field name="first_name"/>
-                           <field name="last_name"/>
+                           <field name="owner_id"/>
+                           <field name="phone"/>
+                           <field name="email"/>
                        </group>
                    </group>
                    <notebook>
@@ -38,9 +42,11 @@
            <tree string="Registry">
                <field name="registry_number"/>
                <field name="vin"/>
+               <field name="make"/>
+               <field name="model"/>
+               <field name="year"/>
                <field name="license_plate"/>
-               <field name="last_name"/>
-               <field name="first_name"/>
+               <field name="owner_id"/>
            </tree>
        </field>
    </record>
@@ -51,8 +57,13 @@
            <search>
                <field name="registry_number"/>
                <field name="vin"/>
+               <field name="make"/>
+               <field name="model"/>
+               <field name="year"/>
                <field name="license_plate"/>
-               <field name="last_name"/>
+               <field name="owner_id"/>
+               <field name="phone"/>
+               <field name="email"/>
                <filter name="groupby_date_registry" string="Date Registered" context="{'group_by':'date_registry'}"/>
            </search>
        </field>

@@ -4,8 +4,6 @@
         <record id="motorcycle_registry_demo_1" model="motorcycle.registry">
             <field name="registry_number">MRN0000</field>
             <field name="current_mileage">250</field>
-            <field name="first_name">John</field>
-            <field name="last_name">Doe</field>
             <field name="vin">JDTV24G721685</field>
             <field name="licence_plate">FETC548HH</field>
         </record>
@@ -13,8 +11,6 @@
             <field name="registry_number">MRN0000</field>
             <field name="current_mileage">5250</field>
             <field name="date_registry">2023-01-01</field>
-            <field name="first_name">Jane</field>
-            <field name="last_name">Doe</field>
             <field name="vin">VSLV205X18642</field>
             <field name="licence_plate">GF43R</field>
         </record>
@@ -22,8 +18,6 @@
             <field name="registry_number">MRN0000</field>
             <field name="current_mileage">23250</field>
             <field name="date_registry">2024-07-04</field>
-            <field name="first_name">Bob</field>
-            <field name="last_name">Smith</field>
             <field name="vin">BAME774445985</field>
             <field name="licence_plate">G5</field>
         </record>
