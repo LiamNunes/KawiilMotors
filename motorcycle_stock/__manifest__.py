@@ -18,7 +18,7 @@ Updates product to include motorcycle handeling capabilities
 
     # always loaded
     'data': [
-        
+        'views/product_template_views.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
