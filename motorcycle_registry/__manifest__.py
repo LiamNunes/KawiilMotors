@@ -20,7 +20,7 @@
         'views/registry_views.xml',
     ],
     'demo':[
-        'demo/motorcycle_registry_demo.xml',
+        #'demo/motorcycle_registry_demo.xml',
     ],
     'application': True,
     'license':"LGPL-3"
