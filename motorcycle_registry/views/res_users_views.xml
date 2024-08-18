@@ -1,0 +1,18 @@
+<odoo>
+    <record id="view_users_form_inherit_motorcycle" model="ir.ui.view">
+        <field name="name">res.users.form.inherit.motorcycle</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='groups_id']" position="inside">
+                <group string="Motorcycle Registry">
+                    <field name="groups_id" widget="many2many_tags" options="{'no_create': True}">
+                        <tree>
+                            <field name="name"/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

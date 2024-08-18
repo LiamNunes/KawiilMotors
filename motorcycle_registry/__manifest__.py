@@ -18,6 +18,7 @@
         'data/registry_data.xml',
         'views/registry_menuitems.xml',
         'views/registry_views.xml',
+        'views/res_users_views.xml',
     ],
     'demo':[
         #'demo/motorcycle_registry_demo.xml',
