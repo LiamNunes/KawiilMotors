@@ -8,6 +8,7 @@
     'license':'OPL-1',
     'depends': ['base','motorcycle_registry'],
     'data': [
+        'security/ir.model.access.csv',
         'views/motorcycle_map_views.xml',
     ],
     'auto_install': True,
