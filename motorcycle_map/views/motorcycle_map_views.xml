@@ -10,8 +10,8 @@
     </record>
 
     <record id="action_motorcycle_registration_map" model="ir.actions.act_window">
-        <field name="name">Motorcycle Registrations</field>
-        <field name="res_model">motorcycle.registration</field>
+        <field name="name">Motorcycle Registry</field>
+        <field name="res_model">motorcycle.registry</field>
         <field name="view_mode">map</field>
         <field name="view_id" ref="view_motorcycle_registration_map"/>
     </record>
