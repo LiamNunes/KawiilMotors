@@ -4,8 +4,8 @@
         <field name="name">motorcycle.registry.map</field>
         <field name="model">motorcycle.registry</field>
         <field name="arch" type="xml">
-            <map string="Motorcycle Registry Map">
-                <!-- Define map view content here -->
+            <map res_partner="owner_id">
+                <field name="owner_id" string ="Customer"/>
             </map>
         </field>
     </record>
