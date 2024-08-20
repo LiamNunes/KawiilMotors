@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_motorcycle_registry_map" model="ir.ui.view">
+        <field name="name">motorcycle.registry.map</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <map string="Motorcycle Registry Map">
+                <!-- Define map view content here -->
+            </map>
+        </field>
+    </record>
+
+    <record id="action_motorcycle_registry_map" model="ir.actions.act_window">
+        <field name="name">Motorcycle Registry Map</field>
+        <field name="res_model">motorcycle.registry</field>
+        <field name="view_mode">map,tree,form</field>
+        <field name="view_id" ref="view_motorcycle_registry_map"/>
+    </record>
+
+    <menuitem id="menu_registry_motorcycles_map" 
+              name="Registry Map" 
+              parent="motorcycle_registry.menu_registry_sub" 
+              sequence="1" 
+              action="action_motorcycle_registry_map"/>
+</odoo>
